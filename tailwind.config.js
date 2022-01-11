@@ -6,6 +6,7 @@ module.exports = {
         purple: {
           10: "#414880",
           15: "#091156",
+          20: "#172176",
         },
         gray: {
           10: "#8B8B8B",
@@ -15,6 +16,7 @@ module.exports = {
         },
         blue: {
           10: "#D9DDFE",
+          15: "#D7DBFF",
         },
       },
       fontFamily: {
