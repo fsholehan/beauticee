@@ -836,6 +836,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(23 33 118 / var(--tw-bg-opacity));
 }
 
+.bg-red-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -893,6 +898,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-4{
@@ -1172,6 +1182,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[248px\]{
     width: 248px;
+  }
+
+  .md\:w-\[411px\]{
+    width: 411px;
+  }
+
+  .md\:w-\[545px\]{
+    width: 545px;
   }
 
   .md\:grid-cols-3{
