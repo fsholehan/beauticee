@@ -10,6 +10,7 @@ module.exports = {
         },
         gray: {
           10: "#8B8B8B",
+          15: "#CACACA",
         },
         pink: {
           10: "#FF64AE",
@@ -17,6 +18,7 @@ module.exports = {
         blue: {
           10: "#D9DDFE",
           15: "#D7DBFF",
+          20: "#ABB4FF",
         },
       },
       fontFamily: {
