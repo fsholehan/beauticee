@@ -5,6 +5,6 @@
 
 @layer components {
   .nav-link {
-    @apply font-medium text-gray-10 hover:text-purple-10 transition duration-150;
+    @apply font-medium text-gray-10 hover:text-purple-10 focus:text-purple-10 transition duration-150;
   }
 }
