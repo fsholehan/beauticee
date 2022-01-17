@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Service - Beautice</title>
+  </head>
+  <body class="font-poppins">
+    <!-- header -->
+    <header class="py-5 bg-white">
+      <div
+        x-data="{ open: false }"
+        class="container mx-auto flex flex-col space-y-7 md:space-y-0 md:flex-row md:items-center md:justify-between px-6 md:px-0"
+      >
+        <div class="flex items-center justify-between w-full">
+          <img
+            class="cursor-pointer h-10 md:h-auto object-contain"
+            src="images/logo.png"
+            alt=""
+          />
+          <button
+            @click="open = !open"
+            class="md:hidden text-gray-10 focus:bg-[#E4E7FF] focus:text-purple-10 border border-transparent focus:border-purple-500 rounded-lg transition duration-150"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                x-show="!open"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                x-show="open"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="md:flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-10"
+        >
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/about.html">About</a>
+          <a class="nav-link text-purple-10 font-semibold" href="/service.html"
+            >Service</a
+          >
+          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#">Blog</a>
+          <div class="pt-4 md:pt-0">
+            <a
+              class="w-full h-14 md:w-[152px] md:h-[52px] bg-pink-10 flex items-center justify-center font-semibold text-white rounded-full transition duration-200 hover:bg-purple-15"
+              href="#"
+            >
+              Contact
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- service -->
+    <section class="bg-white py-20 md:py-32">
+      <div class="container mx-auto px-6 md:px-0">
+        <div class="text-center">
+          <span class="font-semibold text-pink-10">Our Services</span>
+          <h3 class="text-2xl md:text-4xl text-purple-15 font-semibold mt-2">
+            We focus on your beauty
+          </h3>
+          <p class="text-sm md:text-base text-gray-10 tracking-widest mt-4">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div
+          class="hidden md:grid grid-cols-3 place-items-center mt-20 gap-y-16"
+        >
+          <div><img src="images/unsplash_5TJ0Hoy5FLY.png" alt="" /></div>
+          <div class="col-span-2">
+            <img src="images/unsplash_ZOT2Mewzmh8.png" alt="" />
+          </div>
+          <div class="col-span-2">
+            <img src="images/unsplash_gzfIO69Q6eM.png" alt="" />
+          </div>
+          <div><img src="images/unsplash_pTrhfmj2jDA1.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- end service -->
+    <!-- beauty 1 -->
+    <section class="bg-white py-16 md:py-20">
+      <div class="container mx-auto px-6 md:px-0">
+        <div
+          class="flex flex-col space-y-8 md:space-y-0 md:flex-row md:items-center"
+        >
+          <div class="w-full md:w-1/2">
+            <img src="images/Anim1.png" alt="" />
+          </div>
+          <div class="w-full md:w-1/2">
+            <span class="font-semibold text-pink-10">Beauty Consultation</span>
+            <h3
+              class="text-2xl md:text-4xl text-purple-15 font-semibold mt-2 md:w-[411px]"
+            >
+              We services beauty consultation
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray-10 tracking-widest mt-4 md:w-[475px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit,
+              quam suscipit purus donec amet. Egestas volutpat facilisi eu
+              libero.
+            </p>
+            <a
+              class="mt-4 flex items-center space-x-4 text-purple-15 font-semibold"
+              href="#"
+            >
+              <span>Make an Appointment</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-pink-10"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end beauty 1 -->
+    <!-- beauty 2 -->
+    <section class="bg-white py-8 md:py-20">
+      <div class="container mx-auto px-6 md:px-0">
+        <div
+          class="flex flex-col-reverse space-y-8 md:space-y-0 md:flex-row md:items-center"
+        >
+          <div class="w-full md:w-1/2 mt-10 md:mt-0">
+            <span class="font-semibold text-pink-10">Skin Treatements</span>
+            <h3
+              class="text-2xl md:text-4xl text-purple-15 font-semibold mt-2 md:w-[411px]"
+            >
+              Skin care and treatment by expert
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray-10 tracking-widest mt-4 md:w-[475px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit,
+              quam suscipit purus donec amet. Egestas volutpat facilisi eu
+              libero.
+            </p>
+            <a
+              class="mt-4 flex items-center space-x-4 text-purple-15 font-semibold"
+              href="#"
+            >
+              <span>Make an Appointment</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-pink-10"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img class="mx-auto" src="images/Group.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end beauty 2 -->
+    <!-- beauty 3 -->
+    <section class="bg-white py-16 md:py-20">
+      <div class="container mx-auto px-6 md:px-0">
+        <div
+          class="flex flex-col space-y-8 md:space-y-0 md:flex-row md:items-center"
+        >
+          <div class="w-full md:w-1/2">
+            <img src="images/Group1.png" alt="" />
+          </div>
+          <div class="w-full md:w-1/2">
+            <span class="font-semibold text-pink-10">Beauty Product</span>
+            <h3
+              class="text-2xl md:text-4xl text-purple-15 font-semibold mt-2 md:w-[411px]"
+            >
+              We present quality beauty products
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray-10 tracking-widest mt-4 md:w-[475px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit,
+              quam suscipit purus donec amet. Egestas volutpat facilisi eu
+              libero.
+            </p>
+            <a
+              class="mt-4 flex items-center space-x-4 text-purple-15 font-semibold"
+              href="#"
+            >
+              <span>Make an Appointment</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-pink-10"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end beauty 3 -->
+    <!-- alpineJs -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"
+    ></script>
+  </body>
+</html>
